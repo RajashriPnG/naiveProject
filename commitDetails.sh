@@ -1,3 +1,3 @@
 echo Hi
 touch logFile.txt
-echo "This File new" > logFile.txt
+echo "This File 4 new" > logFile.txt
