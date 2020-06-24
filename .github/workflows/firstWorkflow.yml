@@ -31,5 +31,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: lastCommitArtifacts
-        path: ./commitedFiles.log
+        path: ./committedFiles.log
    
