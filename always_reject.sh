@@ -8,5 +8,5 @@ curl "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" | gre
 env
 echo $GITHUB_WORKSPACE
 
-GET /repos/:owner/:repo/commits/:ref
+GET /repos/GITHUB_REPOSITORY_OWNER/$GITHUB_REPOSITORY/commits/$GITHUB_SHA
 #exit 1
