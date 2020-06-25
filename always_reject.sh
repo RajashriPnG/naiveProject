@@ -5,5 +5,6 @@ echo " Access denied, push blocked. Please contact the repository administrator.
 git show $GITHUB_SHA --name-only 
 echo $GITHUB_SHA
 curl "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" | grep -F filename | awk '{print$2}' | cut -d \, -f1 > committedFiles.log
-
+echo env
+echo $GITHUB_WORKSPACE
 #exit 1
