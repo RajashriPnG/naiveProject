@@ -7,4 +7,6 @@ echo $GITHUB_SHA
 curl "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" | grep -F filename | awk '{print$2}' | cut -d \, -f1 > committedFiles.log
 env
 echo $GITHUB_WORKSPACE
+
+GET /repos/:owner/:repo/commits/:ref
 #exit 1
