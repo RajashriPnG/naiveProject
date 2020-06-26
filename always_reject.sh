@@ -22,4 +22,9 @@ do	case "$o" in
 	[?])	echo >&2 "Usage: $0 [ -c ]"; exit 1;;
 	esac
 done
+
+hout "<html>"
+hout "    <title>SailPoint Index on $d $t</title>"
+hout "    <header>SailPoint Index on $d $t</header>"
+hout "</html>"
 #exit 1
