@@ -9,4 +9,9 @@ env
 echo $GITHUB_WORKSPACE
 
 curl  "https://api.github.com/repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA"
+
+export t="`date '+%H%M'`"
+export d="`date --iso`"
+spin=SPFileList-$d-$t
+echo $spin
 #exit 1
