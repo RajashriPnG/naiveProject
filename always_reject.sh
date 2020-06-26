@@ -22,7 +22,11 @@ do	case "$o" in
 	[?])	echo >&2 "Usage: $0 [ -c ]"; exit 1;;
 	esac
 done
-
+indexout=$ddir/index.html
+touch $indexout
+hout () {
+    echo "$@" >> $indexout
+}
 hout "<html>"
 hout "    <title>SailPoint Index on $d $t</title>"
 hout "    <header>SailPoint Index on $d $t</header>"
