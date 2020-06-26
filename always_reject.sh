@@ -22,6 +22,7 @@ do	case "$o" in
 	[?])	echo >&2 "Usage: $0 [ -c ]"; exit 1;;
 	esac
 done
+touch index.html
 indexout=$ddir/index.html
 touch $indexout
 hout () {
