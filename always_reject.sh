@@ -22,6 +22,7 @@ do	case "$o" in
 	[?])	echo >&2 "Usage: $0 [ -c ]"; exit 1;;
 	esac
 done
+shift `expr $OPTIND - 1`
 ddir=SPDetailOutput
 mkdir $ddir
 indexout=$ddir/index.html
